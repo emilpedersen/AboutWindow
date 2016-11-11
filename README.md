@@ -19,7 +19,7 @@ AboutWindow is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "AboutWindow"
+pod 'AboutWindow', :git => 'https://github.com/emilpedersen/AboutWindow.git'
 ```
 
 ## How to use
