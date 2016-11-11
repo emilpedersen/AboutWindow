@@ -21,12 +21,4 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.10'
 
   s.source_files	 = 'Source/*'
-  
-  # s.resource_bundles = {
-  #   'AboutWindow' => ['AboutWindow/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
