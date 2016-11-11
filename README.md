@@ -1,6 +1,6 @@
 # AboutWindow
 
-[![CI Status](http://img.shields.io/travis/Emil Pedersen/AboutWindow.svg?style=flat)](https://travis-ci.org/Emil Pedersen/AboutWindow)
+[![CI Status](http://img.shields.io/travis/emilpedersen/AboutWindow.svg?style=flat)](https://travis-ci.org/emilpedersen/AboutWindow)
 [![Version](https://img.shields.io/cocoapods/v/AboutWindow.svg?style=flat)](http://cocoapods.org/pods/AboutWindow)
 [![License](https://img.shields.io/cocoapods/l/AboutWindow.svg?style=flat)](http://cocoapods.org/pods/AboutWindow)
 [![Platform](https://img.shields.io/cocoapods/p/AboutWindow.svg?style=flat)](http://cocoapods.org/pods/AboutWindow)
