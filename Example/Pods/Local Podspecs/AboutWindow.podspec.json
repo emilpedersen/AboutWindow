@@ -1,0 +1,21 @@
+{
+  "name": "AboutWindow",
+  "version": "0.1.0",
+  "summary": "A short description of AboutWindow.",
+  "homepage": "https://github.com/emilpedersen/AboutWindow",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Emil Pedersen": "offonline@me.com"
+  },
+  "source": {
+    "git": "https://github.com/emilpedersen/AboutWindow.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "osx": "10.10"
+  },
+  "source_files": "Source/*"
+}

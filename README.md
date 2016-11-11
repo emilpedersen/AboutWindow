@@ -24,12 +24,12 @@ pod "AboutWindow"
 
 ## How to use
 
-With website
+Without website
 ```swift
 About.shared.show()
 ```
 
-Without website
+With website
 ```swift
 About.shared.show(website: URL(string:"http://www.ambisapp.com"))
 ```
@@ -37,7 +37,7 @@ About.shared.show(website: URL(string:"http://www.ambisapp.com"))
 
 ## Author
 
-Emil Pedersen, offonline@me.com
+Emil Pedersen, github@ambisapp.com
 
 ## License
 

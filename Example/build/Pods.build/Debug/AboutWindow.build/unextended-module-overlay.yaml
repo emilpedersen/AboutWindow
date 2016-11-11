@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/emilpedersen/Programmering/Apps/AboutWindow/Example/build/Debug/AboutWindow/AboutWindow.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/emilpedersen/Programmering/Apps/AboutWindow/Example/build/Pods.build/Debug/AboutWindow.build/unextended-module.modulemap',
+    }]
+  }]
+}

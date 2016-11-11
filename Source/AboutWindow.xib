@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AboutWindowController" customModule="AboutWindow" customModuleProvider="target">
+            <connections>
+                <outlet property="window" destination="t8N-r8-vhs" id="WCk-Qf-Kpd"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="t8N-r8-vhs" customClass="AboutWindow" customModule="AboutWindow" customModuleProvider="target">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" fullSizeContentView="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="200" height="256"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <value key="minSize" type="size" width="200" height="256"/>
+            <view key="contentView" id="AZZ-uV-DEh" customClass="NSVisualEffectView">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="256"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aVN-zQ-PT1">
+                        <rect key="frame" x="36" y="112" width="128" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="128" id="ldH-N5-DN5"/>
+                            <constraint firstAttribute="height" constant="128" id="qi0-EZ-1an"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="8Dm-V9-JdI"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BPv-XP-DNK">
+                        <rect key="frame" x="75" y="72" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" title="Version" id="GSJ-9d-EAz">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dia-iv-GhD">
+                        <rect key="frame" x="41" y="89" width="119" height="19"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" title="Menubar Color" id="dPg-dz-ZhT">
+                            <font key="font" metaFont="systemBold" size="16"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jiD-aD-Ike">
+                        <rect key="frame" x="56" y="32" width="89" height="32"/>
+                        <buttonCell key="cell" type="push" title="Website" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ftd-hP-9Qg">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clickedWebsite:" target="t8N-r8-vhs" id="gbZ-Mv-U1e"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" alphaValue="0.5" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qul-pB-38f">
+                        <rect key="frame" x="18" y="16" width="164" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="Y90-nL-DbH"/>
+                        </constraints>
+                        <textFieldCell key="cell" controlSize="mini" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="Copyright" id="t7M-os-E4X">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dia-iv-GhD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AZZ-uV-DEh" secondAttribute="leading" constant="24" id="42M-lf-hYi"/>
+                    <constraint firstItem="BPv-XP-DNK" firstAttribute="top" secondItem="dia-iv-GhD" secondAttribute="bottom" id="6ua-WU-YNS"/>
+                    <constraint firstItem="aVN-zQ-PT1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AZZ-uV-DEh" secondAttribute="leading" constant="24" id="E1n-T3-XGe"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qul-pB-38f" secondAttribute="trailing" constant="12" id="IeO-pH-Eik"/>
+                    <constraint firstAttribute="centerX" secondItem="BPv-XP-DNK" secondAttribute="centerX" id="KNI-dX-vP3"/>
+                    <constraint firstAttribute="bottom" secondItem="qul-pB-38f" secondAttribute="bottom" constant="16" id="OkD-FS-D1J"/>
+                    <constraint firstAttribute="centerX" secondItem="jiD-aD-Ike" secondAttribute="centerX" id="Pad-YK-3mB"/>
+                    <constraint firstItem="qul-pB-38f" firstAttribute="top" secondItem="jiD-aD-Ike" secondAttribute="bottom" constant="12" id="RW6-4R-4dq"/>
+                    <constraint firstItem="jiD-aD-Ike" firstAttribute="top" secondItem="BPv-XP-DNK" secondAttribute="bottom" constant="12" id="XlY-r9-nnD"/>
+                    <constraint firstItem="BPv-XP-DNK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AZZ-uV-DEh" secondAttribute="leading" constant="24" id="d8V-cQ-afy"/>
+                    <constraint firstAttribute="centerX" secondItem="dia-iv-GhD" secondAttribute="centerX" id="epX-4e-923"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BPv-XP-DNK" secondAttribute="trailing" constant="24" id="l7F-ym-pxn"/>
+                    <constraint firstItem="qul-pB-38f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AZZ-uV-DEh" secondAttribute="leading" constant="12" id="nRI-Mn-tcg"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jiD-aD-Ike" secondAttribute="trailing" constant="16" id="o8Y-9a-T40"/>
+                    <constraint firstAttribute="centerX" secondItem="qul-pB-38f" secondAttribute="centerX" id="qgc-hs-xHh"/>
+                    <constraint firstItem="jiD-aD-Ike" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AZZ-uV-DEh" secondAttribute="leading" constant="16" id="x17-Ia-oeQ"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aVN-zQ-PT1" secondAttribute="trailing" constant="24" id="xUc-Um-gGH"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dia-iv-GhD" secondAttribute="trailing" constant="24" id="xf8-hz-h4b"/>
+                    <constraint firstAttribute="centerX" secondItem="aVN-zQ-PT1" secondAttribute="centerX" id="y0X-jQ-Ww8"/>
+                    <constraint firstItem="dia-iv-GhD" firstAttribute="top" secondItem="aVN-zQ-PT1" secondAttribute="bottom" constant="4" id="yh8-aK-2z5"/>
+                    <constraint firstItem="aVN-zQ-PT1" firstAttribute="top" secondItem="AZZ-uV-DEh" secondAttribute="top" constant="16" id="ym4-Z5-NnY"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="copyrightLabel" destination="qul-pB-38f" id="CYJ-wV-vcr"/>
+                <outlet property="versionLabel" destination="BPv-XP-DNK" id="RHo-5m-kJV"/>
+                <outlet property="websiteButton" destination="jiD-aD-Ike" id="XGe-lM-ieT"/>
+            </connections>
+            <point key="canvasLocation" x="323" y="332"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="NSApplicationIcon" width="128" height="128"/>
+    </resources>
+</document>

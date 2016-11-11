@@ -1,0 +1,16 @@
+PODS:
+  - AboutWindow (0.1.0)
+
+DEPENDENCIES:
+  - AboutWindow (from `../`)
+
+EXTERNAL SOURCES:
+  AboutWindow:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AboutWindow: 58d8f10281caf8d6bd2afcc7e3d05c30bd01be29
+
+PODFILE CHECKSUM: 6ce38955e5c17a5276c2d47b40c004426564f4bb
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,10 @@
+framework module AboutWindow {
+  umbrella header "AboutWindow-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module AboutWindow.Swift {
+    header "AboutWindow-Swift.h"
+}
