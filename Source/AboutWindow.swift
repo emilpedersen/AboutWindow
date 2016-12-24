@@ -28,6 +28,7 @@ public class AboutWindow: NSWindow {
         
         versionLabel.stringValue = AppInfo.FormattedVersion
         copyrightLabel.stringValue = AppInfo.Copyright!
+        nameLabel.stringValue = AppInfo.AppName
         
         if let _ = About.shared.website {
             websiteButton.isHidden = false
