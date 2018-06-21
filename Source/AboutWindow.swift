@@ -19,7 +19,7 @@ public class AboutWindow: NSWindow {
     override public func awakeFromNib() {
         
         self.collectionBehavior = self.collectionBehavior.union(.moveToActiveSpace)
-        self.level = Int(CGWindowLevelForKey(CGWindowLevelKey.modalPanelWindow))
+        self.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(CGWindowLevelKey.modalPanelWindow)))
         
         self.titlebarAppearsTransparent = true
         self.titleVisibility = .hidden
@@ -40,7 +40,7 @@ public class AboutWindow: NSWindow {
     
     @IBAction func clickedWebsite(_ sender: Any) {
         if let website = About.shared.website {
-            NSWorkspace.shared().open(website)
+            NSWorkspace.shared.open(website)
             close()
         }
     }
@@ -67,7 +67,7 @@ public class About : NSObject {
         aboutWindow.window?.center()
         aboutWindow.window?.makeKeyAndOrderFront(nil)
         NSApp.activate(ignoringOtherApps: true)
-        NSApplication.shared().activate(ignoringOtherApps: true)
+        NSApplication.shared.activate(ignoringOtherApps: true)
     }
 }
 

@@ -10,8 +10,8 @@ import Cocoa
 
 public class AboutWindowController: NSWindowController {
     
-    override public var windowNibName : String! {
-        return "AboutWindow"
+    override public var windowNibName: NSNib.Name! {
+        return NSNib.Name("AboutWindow")
     }
 
     // MARK: Overriden Methods
