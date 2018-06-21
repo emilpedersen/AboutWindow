@@ -41,6 +41,7 @@ public class AboutWindow: NSWindow {
     @IBAction func clickedWebsite(_ sender: Any) {
         if let website = About.shared.website {
             NSWorkspace.shared().open(website)
+            close()
         }
     }
     
